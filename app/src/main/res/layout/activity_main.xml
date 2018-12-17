@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parent_ll"
+    tools:context=".MainActivity">
+
+
+     <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textStyle="bold"
+             android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/person"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/curveshape_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title1"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dip"
+            android:textColor="@color/black"
+            android:text="Personal Details :"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            android:id="@+id/personal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Name :"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:layout_weight="1.4"
+                />
+
+            <TextView
+                android:id="@+id/person_name"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:hint="----"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:padding="6dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/email"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Email ID :"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:layout_weight="1.4"
+                />
+
+            <TextView
+                android:id="@+id/email_id"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:hint="----"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:padding="6dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/device"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/curveshape_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title2"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:textColor="@color/black"
+            android:text="Mobile Details :"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mobile_name"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Mobile Device:"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:layout_weight="1.2"
+                />
+
+            <TextView
+                android:id="@+id/mobile_device"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:hint="----"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:padding="6dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Mobile Model:"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:layout_weight="1.2"
+                />
+
+            <TextView
+                android:id="@+id/mobile_model"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:hint="----"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:padding="6dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Mobile OS:"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:layout_weight="1.2"
+                />
+
+            <TextView
+                android:id="@+id/mobile_os"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:hint="----"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:padding="6dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Mobile IMEI:"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:layout_weight="1.2"
+                />
+
+            <TextView
+                android:id="@+id/imei_no"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:hint="----"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:padding="6dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/curveshape_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:textColor="@color/black"
+            android:text="SIM Card Details :"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="SIM Operator:"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:layout_weight="1.2"
+                />
+
+            <TextView
+                android:id="@+id/sim_name"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:hint="----"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:padding="6dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="SIM Number:"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:layout_weight="1.2"
+                />
+
+            <TextView
+                android:id="@+id/sim_no"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:hint="----"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:padding="6dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/curveshape_bg"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title4"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:text="Send Mobile Details\n via SMS"
+            android:layout_weight="1"
+            />
+        <CheckBox
+            android:id="@+id/send_sms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            />
+
+        </LinearLayout>
+
+</LinearLayout>
